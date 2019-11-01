@@ -4,6 +4,10 @@
 #include <iostream>
 using namespace std;
 
+//Deny Pratama
+//Yayan Dwi Krisdiantoro
+//Arif Hayati Indah Lestari
+
 float cc[20][2];
 
 void init(void);
