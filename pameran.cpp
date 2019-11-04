@@ -88,7 +88,7 @@ void house(float x,float y,float z)
 	glVertex3f(x-5,y+100,z+400);
 	glVertex3f(x,y+100,z+400);
 	glEnd();
-
+	
 }
 //---------------gambar tembok depan belakang----------------//
 
@@ -137,6 +137,8 @@ void house2(float x,float y,float z)
 	glVertex3f(x-200,y+100,z+5);
 	glVertex3f(x,y+100,z+5);
 	glEnd();
+	
+	
 
 
 }
@@ -187,6 +189,50 @@ void atap(float x,float y,float z)
 	glVertex3f(x+500,y,z);
 	glVertex3f(x+500,y,z+500);
 	glVertex3f(x,y,z+500);
+	glEnd();
+	
+	//-----------atap palinga atas----------//
+	glColor3f(0.2,0.8,0.008);//atap kanan
+	glBegin(GL_POLYGON);
+	glVertex3f(x,y,z);
+	glVertex3f(x+200,y+100,z+80);
+	glVertex3f(x+200,y+100,z+420);
+	glVertex3f(x,y,z+500);
+	glEnd();
+
+
+	glColor3f(0.51,0.8,0.008);//atap kiri
+	glBegin(GL_POLYGON);
+	glVertex3f(x+500,y,z);
+	glVertex3f(x+500,y,z+500);
+	glVertex3f(x+300,y+100,z+420);
+	glVertex3f(x+300,y+100,z+80);
+	glEnd();
+
+		
+	glColor3f(0.1,0.9,0.13);//segitiga dibwah atap belakang
+	glBegin(GL_POLYGON);
+	glVertex3f(x+500,y,z);
+	glVertex3f(x,y,z);
+	glVertex3f(x+200,y+100,z+80);
+	glVertex3f(x+300,y+100,z+80);
+	
+	glEnd();
+
+	glColor3f(0.1,0.9,0.13);//segitiga dibwah atap depan
+	glBegin(GL_POLYGON);
+	glVertex3f(x+500,y,z+500);
+	glVertex3f(x,y,z+500);
+	glVertex3f(x+200,y+100,z+420);
+	glVertex3f(x+300,y+100,z+420);
+	glEnd();
+	
+	glColor3f(0.1,0.9,0.13);//tutup atap
+	glBegin(GL_POLYGON);
+	glVertex3f(x+300,y+100,z+80);
+	glVertex3f(x+200,y+100,z+80);
+	glVertex3f(x+200,y+100,z+420);
+	glVertex3f(x+300,y+100,z+420);
 	glEnd();
 	
 
