@@ -30,11 +30,7 @@ int main (int argc, char **argv)
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 	glutInitWindowSize(1100, 1100);
 	glutInitWindowPosition(100, 10);
-<<<<<<< HEAD
 	glutCreateWindow("PAMERAN");
-=======
-	glutCreateWindow("RUANG PAMERAN - KELOMPOK 1");
->>>>>>> 1810cd39f72353fd56302cc3f48f783313e9e43a
 	init();
 
 	glutDisplayFunc(display);
@@ -530,7 +526,6 @@ void display(void)
 		glVertex3f(15,0.01,200);
 		glColor3f(0.51,0.015,0.008);//warna depan kanan
 		glVertex3f(15,0.01,-200);
-<<<<<<< HEAD
 		glEnd();
 
 
@@ -582,10 +577,6 @@ void display(void)
 
 
 
-=======
-		glEnd();      
-		
->>>>>>> 1810cd39f72353fd56302cc3f48f783313e9e43a
 	house1();
 	glFlush();
 	glutSwapBuffers();
@@ -624,6 +615,12 @@ void keyboard(unsigned char key, int x, int y)
     case 'e':
     case 'E':
             glRotatef(2	,0.0,1.0,0.0);
+    case 'z':
+    case 'Z':
+            glRotatef(2,1.0,0.0,0.0);
+    case 'c':
+    case 'C':
+            glRotatef(-2,0.-0,1.0,0.0);
 
 	}
 	display();
