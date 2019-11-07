@@ -30,7 +30,7 @@ int main (int argc, char **argv)
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 	glutInitWindowSize(1100, 1100);
 	glutInitWindowPosition(100, 10);
-	glutCreateWindow("ORAURUS");
+	glutCreateWindow("RUANG PAMERAN - KELOMPOK 1");
 	init();
 	
 	glutDisplayFunc(display);
