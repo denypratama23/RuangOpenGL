@@ -526,56 +526,7 @@ void display(void)
 		glVertex3f(15,0.01,200);
 		glColor3f(0.51,0.015,0.008);//warna depan kanan
 		glVertex3f(15,0.01,-200);
-		glEnd();
-
-
-
-		glBegin(GL_QUADS); //jalan belakang d2 dan d3
-        glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(-90,0.01,100);
-		glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(-90,0.01,90);
-		glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(80,0.01,90);
-		glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(80,0.01,100);
-		glEnd();
-		
-		glBegin(GL_QUADS); //jalan d2 menuju dekanat 
-        glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(60,0.01,-200); 
-		glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(60,0.01,100);
-		glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(50,0.01,100);
-		glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(50,0.01,-200);
-		glEnd();
-
-		glBegin(GL_QUADS); //jalan d4 menuju dekanat 
-        glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(-80,0.01,-200); 
-		glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(-80,0.01,100);
-		glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(-70,0.01,100);
-		glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(-70,0.01,-200);
-		glEnd();
-		
-        
-        glBegin(GL_QUADS); //jalan tengah
-        glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(-90,0.01,-40);
-		glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(-90,0.01,-50);
-		glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(80,0.01,-50);
-		glColor3f(0.2, 0.2, 0.2);
-        glVertex3f(80,0.01,-40);
-		glEnd();
-        
-        
+		glEnd();      
 		
 	house1();
 	glFlush();
