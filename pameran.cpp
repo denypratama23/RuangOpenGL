@@ -517,7 +517,7 @@ void display(void)
 
 //--------------gambar jalan---------------//
 
-		glBegin(GL_QUADS); //jala utama
+		glBegin(GL_QUADS); //karpet utama
         glColor3f(0.51,0.015,0.008);//warna belakang kanan
         glVertex3f(-20,0.01,-200); 
 		glColor3f(0.51,0.015,0.008);//warna belakang kiri
@@ -526,7 +526,18 @@ void display(void)
 		glVertex3f(15,0.01,200);
 		glColor3f(0.51,0.015,0.008);//warna depan kanan
 		glVertex3f(15,0.01,-200);
-		glEnd();      
+		glEnd();   
+		
+		glBegin(GL_QUADS); //karpet melintang tengah
+        glColor3f(0.51,0.015,0.008);//warna belakang kanan
+        glVertex3f(-140,0.01,15); 
+		glColor3f(0.51,0.015,0.008);//warna belakang kiri
+		glVertex3f(-140,0.01,60);
+		glColor3f(0.51,0.015,0.008);//warna depan kiri
+		glVertex3f(135,0.01,60);
+		glColor3f(0.51,0.015,0.008);//warna depan kanan
+		glVertex3f(135,0.01,15);
+		glEnd();    
 		
 	house1();
 	glFlush();
