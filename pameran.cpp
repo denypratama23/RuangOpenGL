@@ -32,7 +32,7 @@ int main (int argc, char **argv)
 	glutInitWindowPosition(100, 10);
 	glutCreateWindow("RUANG PAMERAN - KELOMPOK 1");
 	init();
-	
+
 	glutDisplayFunc(display);
 	glutKeyboardFunc(keyboard);
 
@@ -88,7 +88,7 @@ void house(float x,float y,float z)
 	glVertex3f(x-5,y+100,z+400);
 	glVertex3f(x,y+100,z+400);
 	glEnd();
-	
+
 }
 //---------------gambar tembok depan belakang----------------//
 
@@ -137,8 +137,8 @@ void house2(float x,float y,float z)
 	glVertex3f(x-200,y+100,z+5);
 	glVertex3f(x,y+100,z+5);
 	glEnd();
-	
-	
+
+
 
 
 }
@@ -172,7 +172,7 @@ void ataspintu(float x,float y,float z)
 	glVertex3f(x-50,y+40,z+5);
 	glVertex3f(x,y+40,z+5);
 	glEnd();
-	
+
 
 
 }
@@ -190,7 +190,7 @@ void atap(float x,float y,float z)
 	glVertex3f(x+500,y,z+500);
 	glVertex3f(x,y,z+500);
 	glEnd();
-	
+
 	//-----------atap palinga atas----------//
 	glColor3f(0.2,0.8,0.008);//atap kanan
 	glBegin(GL_POLYGON);
@@ -209,14 +209,14 @@ void atap(float x,float y,float z)
 	glVertex3f(x+300,y+100,z+80);
 	glEnd();
 
-		
+
 	glColor3f(0.1,0.9,0.13);//segitiga dibwah atap belakang
 	glBegin(GL_POLYGON);
 	glVertex3f(x+500,y,z);
 	glVertex3f(x,y,z);
 	glVertex3f(x+200,y+100,z+80);
 	glVertex3f(x+300,y+100,z+80);
-	
+
 	glEnd();
 
 	glColor3f(0.1,0.9,0.13);//segitiga dibwah atap depan
@@ -226,7 +226,7 @@ void atap(float x,float y,float z)
 	glVertex3f(x+200,y+100,z+420);
 	glVertex3f(x+300,y+100,z+420);
 	glEnd();
-	
+
 	glColor3f(0.1,0.9,0.13);//tutup atap
 	glBegin(GL_POLYGON);
 	glVertex3f(x+300,y+100,z+80);
@@ -234,7 +234,7 @@ void atap(float x,float y,float z)
 	glVertex3f(x+200,y+100,z+420);
 	glVertex3f(x+300,y+100,z+420);
 	glEnd();
-	
+
 
 }
 //---------------gambar kanvas----------------//
@@ -264,7 +264,7 @@ void house1()
 	house2(-25,0.1,195); //tembok depan kanan
 	house2(220,0.1,195); //tembok depan kiri
 	ataspintu(20,60,195); //tembok depan atas
-	
+
 	house2(-25,0.1,100); //tembok belakang1 kanan
 	house2(220,0.1,100); //tembok belakang1 kiri
 	ataspintu(20,60,100); //tembok belakang1 atas
@@ -272,49 +272,49 @@ void house1()
 	house2(-25,0.1,-100); //tembok belakang2 kanan
 	house2(220,0.1,-100); //tembok belakang2 kiri
 	ataspintu(20,60,-100); //tembok belakang2 atas
-	
+
 	house2(-25,0.1,-195); //tembok belakan3 kanan
 	house2(220,0.1,-195); //tembok belakang3 kiri
 	ataspintu(20,60,-195); //tembok belakang3 atas
-	
+
 	atap(-250,100,-250);//atap rumah
-	
+
 	kanvas(-150,30,200); //kanvas 1.1
 	kanvas(-50,30,200); //kanvas 1.2
 	kanvas(100,30,200); //kanvas 1.3
 	kanvas(200,30,200); //kanvas 1.4
-	
+
 	kanvas(-150,30,189); //kanvas 1.-1
 	kanvas(-50,30,189); //kanvas 1.-2
 	kanvas(100,30,189); //kanvas 1.-3
 	kanvas(200,30,189); //kanvas 1.-4
-	
+
 	//------------------------------------------//
-	
+
 	kanvas(-150,30,105); //kanvas 2.1
 	kanvas(-50,30,105); //kanvas 2.2
 	kanvas(100,30,105); //kanvas 2.3
 	kanvas(200,30,105); //kanvas 2.4
-	
+
 	kanvas(-150,30,94); //kanvas 2.-1
 	kanvas(-50,30,94); //kanvas 2.-2
 	kanvas(100,30,94); //kanvas 2.-3
 	kanvas(200,30,94); //kanvas 2.-4
-	
+
 	//---------------------------------------//
-	
+
 	kanvas(-150,30,-95); //kanvas 3.1
 	kanvas(-50,30,-95); //kanvas 3.2
 	kanvas(100,30,-95); //kanvas 3.3
 	kanvas(200,30,-95); //kanvas 3.4
-	
+
 	kanvas(-150,30,-106); //kanvas 3.-1
 	kanvas(-50,30,-106); //kanvas 3.-2
 	kanvas(100,30,-106); //kanvas 3.-3
 	kanvas(200,30,-106); //kanvas 3.-4
-	
+
 	//------------------------------------//
-	
+
 	kanvas(-150,30,-191); //kanvas 2.1
 	kanvas(-50,30,-191); //kanvas 2.2
 	kanvas(100,30,-191); //kanvas 2.3
@@ -326,7 +326,7 @@ void house1()
 	kanvas(200,30,-201); //kanvas 2.-4
 
 
-    
+
 
 
 }
@@ -393,14 +393,14 @@ void display(void)
 
 //--------------gambar batang pohon-------------//
 
-   
+
  	glColor3f(0.3,0.015,0.13);
     glPushMatrix();
 	glTranslatef(100,1,240); //pohon depan d2
     glutSolidCube(7);
     glPopMatrix();
 
-	
+
     glColor3f(0.3,0.015,0.13);
     glPushMatrix();
 	glTranslatef(30,1,240);	//pohon depan d3
@@ -418,25 +418,25 @@ void display(void)
 	glTranslatef(-130,1,240);
     glutSolidCube(7);
     glPopMatrix();
-    
+
     glColor3f(0.3,0.015,0.13);
     glPushMatrix();				//pohon depan mushola
 	glTranslatef(70,1,-20);
     glutSolidCube(7);
     glPopMatrix();
-    
+
      glColor3f(0.3,0.015,0.13);
     glPushMatrix();				//pohon depan mushola
 	glTranslatef(70,1,80);
     glutSolidCube(7);
     glPopMatrix();
-    
+
      glColor3f(0.3,0.015,0.13);
     glPushMatrix();				//pohon depan mushola
 	glTranslatef(-85,1,-20);
     glutSolidCube(7);
     glPopMatrix();
-    
+
      glColor3f(0.3,0.015,0.13);
     glPushMatrix();				//pohon depan mushola
 	glTranslatef(-85,1,80);
@@ -448,8 +448,8 @@ void display(void)
 
 //--------------gambar daun pohon----------//
 
-  
-	
+
+
 	 glColor3f(0.015,0.3,0.13);
     glPushMatrix();
     glTranslatef(100,24,240);
@@ -482,7 +482,7 @@ void display(void)
 	glFlush();
 	glPopMatrix();
 
-	
+
     glColor3f(0.015,0.3,0.13);
     glPushMatrix();
     glTranslatef(70,24,-20);
@@ -490,7 +490,7 @@ void display(void)
 	glutSolidSphere(10,15,4);
 	glFlush();
 	glPopMatrix();
-	
+
 	 glColor3f(0.015,0.3,0.13);
     glPushMatrix();
     glTranslatef(70,24,80);
@@ -498,7 +498,7 @@ void display(void)
 	glutSolidSphere(10,15,4);
 	glFlush();
 	glPopMatrix();
-	
+
 	 glColor3f(0.015,0.3,0.13);
     glPushMatrix();
     glTranslatef(-85,24,-20);
@@ -506,7 +506,7 @@ void display(void)
 	glutSolidSphere(10,15,4);
 	glFlush();
 	glPopMatrix();
-	
+
 	 glColor3f(0.015,0.3,0.13);
     glPushMatrix();
     glTranslatef(-85,24,80);
@@ -519,18 +519,18 @@ void display(void)
 
 		glBegin(GL_QUADS); //karpet utama
         glColor3f(0.51,0.015,0.008);//warna belakang kanan
-        glVertex3f(-20,0.01,-200); 
+        glVertex3f(-20,0.01,-200);
 		glColor3f(0.51,0.015,0.008);//warna belakang kiri
 		glVertex3f(-20,0.01,200);
 		glColor3f(0.51,0.015,0.008);//warna depan kiri
 		glVertex3f(15,0.01,200);
 		glColor3f(0.51,0.015,0.008);//warna depan kanan
 		glVertex3f(15,0.01,-200);
-		glEnd();   
-		
+		glEnd();
+
 		glBegin(GL_QUADS); //karpet melintang tengah
         glColor3f(0.51,0.015,0.008);//warna belakang kanan
-        glVertex3f(-140,0.01,15); 
+        glVertex3f(-140,0.01,15);
 		glColor3f(0.51,0.015,0.008);//warna belakang kiri
 		glVertex3f(-140,0.01,60);
 		glColor3f(0.51,0.015,0.008);//warna depan kiri
@@ -538,10 +538,10 @@ void display(void)
 		glColor3f(0.51,0.015,0.008);//warna depan kanan
 		glVertex3f(135,0.01,15);
 		glEnd();
-		
+
 		glBegin(GL_QUADS); //karpet melintang depan
         glColor3f(0.51,0.015,0.008);//warna belakang kanan
-        glVertex3f(-140,0.01,140); 
+        glVertex3f(-140,0.01,140);
 		glColor3f(0.51,0.015,0.008);//warna belakang kiri
 		glVertex3f(-140,0.01,175);
 		glColor3f(0.51,0.015,0.008);//warna depan kiri
@@ -549,18 +549,18 @@ void display(void)
 		glColor3f(0.51,0.015,0.008);//warna depan kanan
 		glVertex3f(135,0.01,140);
 		glEnd();
-		
-//		glBegin(GL_QUADS); //karpet melintang belakang
-//        glColor3f(0.51,0.015,0.008);//warna belakang kanan
-//        glVertex3f(-140,0.01,-115); 
-//		glColor3f(0.51,0.015,0.008);//warna belakang kiri
-//		glVertex3f(-140,0.01,-150);
-//		glColor3f(0.51,0.015,0.008);//warna depan kiri
-//		glVertex3f(135,0.01,-150);
-//		glColor3f(0.51,0.015,0.008);//warna depan kanan
-//		glVertex3f(135,0.01,-115);
-//		glEnd();    
-		
+
+		glBegin(GL_QUADS); //karpet melintang belakang
+        glColor3f(0.51,0.015,0.008);//warna belakang kanan
+        glVertex3f(-140,0.01,-115);
+		glColor3f(0.51,0.015,0.008);//warna belakang kiri
+		glVertex3f(-140,0.01,-150);
+		glColor3f(0.51,0.015,0.008);//warna depan kiri
+		glVertex3f(135,0.01,-150);
+		glColor3f(0.51,0.015,0.008);//warna depan kanan
+		glVertex3f(135,0.01,-115);
+		glEnd();
+
 	house1();
 	glFlush();
 	glutSwapBuffers();
