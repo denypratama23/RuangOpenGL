@@ -537,7 +537,29 @@ void display(void)
 		glVertex3f(135,0.01,60);
 		glColor3f(0.51,0.015,0.008);//warna depan kanan
 		glVertex3f(135,0.01,15);
-		glEnd();    
+		glEnd();
+		
+		glBegin(GL_QUADS); //karpet melintang depan
+        glColor3f(0.51,0.015,0.008);//warna belakang kanan
+        glVertex3f(-140,0.01,140); 
+		glColor3f(0.51,0.015,0.008);//warna belakang kiri
+		glVertex3f(-140,0.01,175);
+		glColor3f(0.51,0.015,0.008);//warna depan kiri
+		glVertex3f(135,0.01,175);
+		glColor3f(0.51,0.015,0.008);//warna depan kanan
+		glVertex3f(135,0.01,140);
+		glEnd();
+		
+//		glBegin(GL_QUADS); //karpet melintang belakang
+//        glColor3f(0.51,0.015,0.008);//warna belakang kanan
+//        glVertex3f(-140,0.01,-115); 
+//		glColor3f(0.51,0.015,0.008);//warna belakang kiri
+//		glVertex3f(-140,0.01,-150);
+//		glColor3f(0.51,0.015,0.008);//warna depan kiri
+//		glVertex3f(135,0.01,-150);
+//		glColor3f(0.51,0.015,0.008);//warna depan kanan
+//		glVertex3f(135,0.01,-115);
+//		glEnd();    
 		
 	house1();
 	glFlush();
