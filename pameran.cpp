@@ -272,30 +272,30 @@ void tulisan(float x,float y,float z)
 	glVertex3f(x-29,y+5,z+5);
 	glEnd();
 	
-//	glColor3f(0.8,0.4,0.2);
-//	glBegin(GL_POLYGON);  //R
-///	glVertex3f(x-24,y+13,z+5);
-//	glVertex3f(x-24,y+5,z+5);
-//	glVertex3f(x-26,y+5,z+5);
-//	glVertex3f(x-26,y+20,z+5);
-//	glVertex3f(x-19,y+20,z+5);
-//	glVertex3f(x-19,y+15,z+5);
-//	glVertex3f(x-23,y+15,z+5);
-//	glVertex3f(x-19,y+5,z+5);
-//	glVertex3f(x-21,y+5,z+5);
-//	glEnd();
+	glColor3f(0.8,0.4,0.2);
+	glBegin(GL_POLYGON);  //R
+	glVertex3f(x-24,y+13,z+5);
+	glVertex3f(x-24,y+5,z+5);
+	glVertex3f(x-26,y+5,z+5);
+	glVertex3f(x-26,y+20,z+5);
+	glVertex3f(x-19,y+20,z+5);
+	glVertex3f(x-19,y+15,z+5);
+	glVertex3f(x-23,y+15,z+5);
+	glVertex3f(x-19,y+5,z+5);
+	glVertex3f(x-21,y+5,z+5);
+	glEnd();
 	
-//	glColor3f(0.8,0.4,0.2);
-//	glBegin(GL_POLYGON);  //T
-//	glVertex3f(x-13,y+16,z+5);
-//	glVertex3f(x-17,y+16,z+5);
-//	glVertex3f(x-17,y+20,z+5);
-//	glVertex3f(x-7,y+20,z+5);
-//	glVertex3f(x-7,y+16,z+5);
-//	glVertex3f(x-11,y+16,z+5);
-//	glVertex3f(x-11,y+5,z+5);
-//	glVertex3f(x-13,y+5,z+5);
-//	glEnd();
+	glColor3f(0.8,0.4,0.2);
+	glBegin(GL_POLYGON);  //T
+	glVertex3f(x-13,y+16,z+5);
+	glVertex3f(x-17,y+16,z+5);
+	glVertex3f(x-17,y+20,z+5);
+	glVertex3f(x-7,y+20,z+5);
+	glVertex3f(x-7,y+16,z+5);
+	glVertex3f(x-11,y+16,z+5);
+	glVertex3f(x-11,y+5,z+5);
+	glVertex3f(x-13,y+5,z+5);
+	glEnd();
 	
 //	glColor3f(0.3,0.015,0.13);//bawah
 //	glBegin(GL_POLYGON);
@@ -348,7 +348,7 @@ void tulisan(float x,float y,float z)
 //	glEnd();
 	
 
-//}
+}
 
 //---------------gambar frame jendela----------------//
 
