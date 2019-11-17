@@ -256,21 +256,21 @@ void kanvas(float x,float y,float z)
 
 //---------------gambar tulisan----------------//
 
-//void tulisan(float x,float y,float z)
-//{
+void tulisan(float x,float y,float z)
+{
 
 	
 	
-//	glColor3f(0.8,0.4,0.2);
-//	glBegin(GL_POLYGON);   //A
-//	glVertex3f(x-33,y+12,z+5);
-//	glVertex3f(x-37,y+5,z+5);
-//	glVertex3f(x-38,y+5,z+5);
-//	glVertex3f(x-35,y+20,z+5);
-//	glVertex3f(x-31,y+20,z+5);
-//	glVertex3f(x-28,y+5,z+5);
-//	glVertex3f(x-29,y+5,z+5);
-//	glEnd();
+	glColor3f(0.8,0.4,0.2);
+	glBegin(GL_POLYGON);   //A
+	glVertex3f(x-33,y+12,z+5);
+	glVertex3f(x-37,y+5,z+5);
+	glVertex3f(x-38,y+5,z+5);
+	glVertex3f(x-35,y+20,z+5);
+	glVertex3f(x-31,y+20,z+5);
+	glVertex3f(x-28,y+5,z+5);
+	glVertex3f(x-29,y+5,z+5);
+	glEnd();
 	
 //	glColor3f(0.8,0.4,0.2);
 //	glBegin(GL_POLYGON);  //R
@@ -447,7 +447,7 @@ void house1()
 	jendela(200,30,-205.2); //jendela 2.-4
 
 	//-----------tulisan depan rumah--------------//
-	//tulisan(20,60,195.2); //jendela 1.1
+	tulisan(20,60,195.2); //jendela 1.1
 
 
 	kanvas(-150,30,195.1); //kanvas 1.1
