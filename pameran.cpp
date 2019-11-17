@@ -441,10 +441,10 @@ void house1()
 	jendela(200,30,195.2); //jendela 1.4
 	
 	//-----------jendela belakang rumah--------------//
-	//jendela(-150,30,-205.2); //jendela 2.-1
-	//jendela(-50,30,-205.2); //jendela 2.-2
-	//jendela(100,30,-205.2); //jendela 2.-3
-	//jendela(200,30,-205.2); //jendela 2.-4
+	jendela(-150,30,-205.2); //jendela 2.-1
+	jendela(-50,30,-205.2); //jendela 2.-2
+	jendela(100,30,-205.2); //jendela 2.-3
+	jendela(200,30,-205.2); //jendela 2.-4
 
 	//-----------tulisan depan rumah--------------//
 	//tulisan(20,60,195.2); //jendela 1.1
