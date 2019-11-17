@@ -329,23 +329,23 @@ void tulisan(float x,float y,float z)
 	glVertex3f(x+5,y+25,z+5);
 	glEnd();
 	
-//	glColor3f(0.3,0.015,0.13);
-//	glBegin(GL_POLYGON);   //tali
-//	glVertex3f(x-5,y+23,z+5);
-//	glVertex3f(x-40,y+23,z+5);
-//	glVertex3f(x-40,y+30,z+5);
-//	glVertex3f(x-5,y+30,z+5);
-//	glEnd();
+	glColor3f(0.3,0.015,0.13);
+	glBegin(GL_POLYGON);   //tali
+	glVertex3f(x-5,y+23,z+5);
+	glVertex3f(x-40,y+23,z+5);
+	glVertex3f(x-40,y+30,z+5);
+	glVertex3f(x-5,y+30,z+5);
+	glEnd();
 	
 	
 	
-//	glColor3f(0.8,0.6,0.4);//kanvas tulisan
-//	glBegin(GL_POLYGON);
-//	glVertex3f(x+5,y,z+4.9);
-//	glVertex3f(x-50,y,z+4.9);
-//	glVertex3f(x-50,y+25,z+4.9);
-//	glVertex3f(x+5,y+25,z+4.9);
-//	glEnd();
+	glColor3f(0.8,0.6,0.4);//kanvas tulisan
+	glBegin(GL_POLYGON);
+	glVertex3f(x+5,y,z+4.9);
+	glVertex3f(x-50,y,z+4.9);
+	glVertex3f(x-50,y+25,z+4.9);
+	glVertex3f(x+5,y+25,z+4.9);
+	glEnd();
 	
 
 }
