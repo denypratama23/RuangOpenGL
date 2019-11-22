@@ -253,14 +253,26 @@ void kanvas(float x,float y,float z)
 	glEnd();
 
 }
+void a(float x,float y,float z)
+{
+
+	glColor3f(0.0,1.0,1.0);//tembok depan
+	glBegin(GL_POLYGON);
+	glVertex3f(x,y,z+5);
+	glVertex3f(x-50,y,z+5);
+	glVertex3f(x-50,y+50,z+5);
+	glVertex3f(x,y+50,z+5);
+	glEnd();
+
+}
 
 //---------------gambar tulisan----------------//
 
 void tulisan(float x,float y,float z)
 {
 
-	
-	
+
+
 	glColor3f(0.8,0.4,0.2);
 	glBegin(GL_POLYGON);   //A
 	glVertex3f(x-33,y+12,z+5);
@@ -271,7 +283,7 @@ void tulisan(float x,float y,float z)
 	glVertex3f(x-28,y+5,z+5);
 	glVertex3f(x-29,y+5,z+5);
 	glEnd();
-	
+
 	glColor3f(0.8,0.4,0.2);
 	glBegin(GL_POLYGON);  //R
 	glVertex3f(x-24,y+13,z+5);
@@ -284,7 +296,7 @@ void tulisan(float x,float y,float z)
 	glVertex3f(x-19,y+5,z+5);
 	glVertex3f(x-21,y+5,z+5);
 	glEnd();
-	
+
 	glColor3f(0.8,0.4,0.2);
 	glBegin(GL_POLYGON);  //T
 	glVertex3f(x-13,y+16,z+5);
@@ -296,7 +308,7 @@ void tulisan(float x,float y,float z)
 	glVertex3f(x-11,y+5,z+5);
 	glVertex3f(x-13,y+5,z+5);
 	glEnd();
-	
+
 	glColor3f(0.3,0.015,0.13);//bawah
 	glBegin(GL_POLYGON);
 	glVertex3f(x+5,y,z+5);
@@ -304,7 +316,7 @@ void tulisan(float x,float y,float z)
 	glVertex3f(x-50,y+2,z+5);
 	glVertex3f(x+5,y+2,z+5);
 	glEnd();
-	
+
 	glColor3f(0.3,0.015,0.13);//atas
 	glBegin(GL_POLYGON);
 	glVertex3f(x+5,y+23,z+5);
@@ -312,7 +324,7 @@ void tulisan(float x,float y,float z)
 	glVertex3f(x-50,y+25,z+5);
 	glVertex3f(x+5,y+25,z+5);
 	glEnd();
-	
+
 	glColor3f(0.3,0.015,0.13);//kiri
 	glBegin(GL_POLYGON);
 	glVertex3f(x-48,y,z+5);
@@ -320,7 +332,7 @@ void tulisan(float x,float y,float z)
 	glVertex3f(x-50,y+25,z+5);
 	glVertex3f(x-48,y+25,z+5);
 	glEnd();
-	
+
 	glColor3f(0.3,0.015,0.13);//kanan
 	glBegin(GL_POLYGON);
 	glVertex3f(x+5,y,z+5);
@@ -328,7 +340,7 @@ void tulisan(float x,float y,float z)
 	glVertex3f(x+3,y+25,z+5);
 	glVertex3f(x+5,y+25,z+5);
 	glEnd();
-	
+
 	glColor3f(0.3,0.015,0.13);
 	glBegin(GL_POLYGON);   //tali
 	glVertex3f(x-5,y+23,z+5);
@@ -336,9 +348,9 @@ void tulisan(float x,float y,float z)
 	glVertex3f(x-40,y+30,z+5);
 	glVertex3f(x-5,y+30,z+5);
 	glEnd();
-	
-	
-	
+
+
+
 	glColor3f(0.8,0.6,0.4);//kanvas tulisan
 	glBegin(GL_POLYGON);
 	glVertex3f(x+5,y,z+4.9);
@@ -346,7 +358,7 @@ void tulisan(float x,float y,float z)
 	glVertex3f(x-50,y+25,z+4.9);
 	glVertex3f(x+5,y+25,z+4.9);
 	glEnd();
-	
+
 
 }
 
@@ -362,7 +374,7 @@ void jendela(float x,float y,float z)
 	glVertex3f(x-50,y+5,z+5);
 	glVertex3f(x,y+5,z+5);
 	glEnd();
-	
+
 	glColor3f(0.3,0.015,0.13);//atas
 	glBegin(GL_POLYGON);
 	glVertex3f(x,y+50,z+5);
@@ -370,7 +382,7 @@ void jendela(float x,float y,float z)
 	glVertex3f(x-50,y+45,z+5);
 	glVertex3f(x,y+45,z+5);
 	glEnd();
-	
+
 	glColor3f(0.3,0.015,0.13);//kanan
 	glBegin(GL_POLYGON);
 	glVertex3f(x,y,z+5);
@@ -378,7 +390,7 @@ void jendela(float x,float y,float z)
 	glVertex3f(x+5,y+50,z+5);
 	glVertex3f(x,y+50,z+5);
 	glEnd();
-	
+
 	glColor3f(0.3,0.015,0.13);//kiri
 	glBegin(GL_POLYGON);
 	glVertex3f(x-50,y,z+5);
@@ -386,7 +398,7 @@ void jendela(float x,float y,float z)
 	glVertex3f(x-45,y+50,z+5);
 	glVertex3f(x-50,y+50,z+5);
 	glEnd();
-	
+
 	glColor3f(0.3,0.015,0.13);//tengah vertikal
 	glBegin(GL_POLYGON);
 	glVertex3f(x-25,y,z+5);
@@ -394,7 +406,7 @@ void jendela(float x,float y,float z)
 	glVertex3f(x-20,y+50,z+5);
 	glVertex3f(x-25,y+50,z+5);
 	glEnd();
-	
+
 	glColor3f(0.3,0.015,0.13);//tengah horisontal
 	glBegin(GL_POLYGON);
 	glVertex3f(x,y+27,z+5);
@@ -402,7 +414,7 @@ void jendela(float x,float y,float z)
 	glVertex3f(x-50,y+22,z+5);
 	glVertex3f(x,y+22,z+5);
 	glEnd();
-	
+
 
 
 }
@@ -433,13 +445,13 @@ void house1()
 	ataspintu(20,60,-200); //tembok belakang3 atas
 
 	atap(-250,100,-250);//atap rumah
-	
+
 	//-----------jendela depan rumah--------------//
 	jendela(-150,30,195.2); //jendela 1.1
 	jendela(-50,30,195.2); //jendela 1.2
 	jendela(100,30,195.2); //jendela 1.3
 	jendela(200,30,195.2); //jendela 1.4
-	
+
 	//-----------jendela belakang rumah--------------//
 	jendela(-150,30,-205.2); //jendela 2.-1
 	jendela(-50,30,-205.2); //jendela 2.-2
@@ -455,10 +467,13 @@ void house1()
 	kanvas(100,30,195.1); //kanvas 1.3
 	kanvas(200,30,195.1); //kanvas 1.4
 
+
 	kanvas(-150,30,189); //kanvas 1.-1
 	kanvas(-50,30,189); //kanvas 1.-2
 	kanvas(100,30,189); //kanvas 1.-3
 	kanvas(200,30,189); //kanvas 1.-4
+
+
 
 	//------------------------------------------//
 
@@ -731,6 +746,7 @@ void display(void)
 		glColor3f(0.51,0.015,0.008);//warna depan kanan
 		glVertex3f(135,0.01,-115);
 		glEnd();
+
 
 	house1();
 	glFlush();
