@@ -21,6 +21,7 @@ void ataspintu(float,float,float);
 void kanvas(float,float,float);
 void jendela(float,float,float);
 void tulisan(float,float,float);
+void gambar(float,float,float);
 void atap(float,float,float);
 void circle1(float);
 void stand(float ,float ,float );
@@ -362,6 +363,27 @@ void tulisan(float x,float y,float z)
 
 }
 
+//---------------gambar------------------//
+void gambar(float x,float y,float z)
+{
+
+
+
+	glColor3f(0.8,0.4,0.2);
+	glBegin(GL_POLYGON);   //A
+	glVertex3f(x-33,y+12,z+5);
+	glVertex3f(x-37,y+5,z+5);
+	glVertex3f(x-38,y+5,z+5);
+	glVertex3f(x-35,y+20,z+5);
+	glVertex3f(x-31,y+20,z+5);
+	glVertex3f(x-28,y+5,z+5);
+	glVertex3f(x-29,y+5,z+5);
+	glEnd();
+}
+
+
+
+
 //---------------gambar frame jendela----------------//
 
 void jendela(float x,float y,float z)
@@ -459,8 +481,15 @@ void house1()
 	jendela(200,30,-205.2); //jendela 2.-4
 
 	//-----------tulisan depan rumah--------------//
-	tulisan(20,60,195.2); //jendela 1.1
-
+	tulisan(20,60,195.2); 
+	
+	//-----------gambar kanvas ruang 1-------------//
+	gambar(-150,40,105); //kanvas 2.1
+	gambar(-50,40,105); //kanvas 2.2
+	gambar(100,40,105); //kanvas 2.3
+	gambar(200,40,105); //kanvas 2.4 
+	
+	
 
 	kanvas(-150,30,195.1); //kanvas 1.1
 	kanvas(-50,30,195.1); //kanvas 1.2
