@@ -22,6 +22,7 @@ void kanvas(float,float,float);
 void jendela(float,float,float);
 void tulisan(float,float,float);
 void gambar(float,float,float);
+void gambar2(float,float,float);
 void atap(float,float,float);
 void circle1(float);
 void stand(float ,float ,float );
@@ -413,7 +414,60 @@ void gambar(float x,float y,float z)
 	glEnd();
 }
 
+//---------------gambar2 (Gunung)------------------//
+void gambar2(float x,float y,float z)
+{
+	glColor3f(0.1,0.2,0.9);
+	glBegin(GL_POLYGON);   //gunung
+	glVertex3f(x-50,y+18,z+5);
+	glVertex3f(x-30,y+30,z+5);
+	glVertex3f(x-16,y+23,z+5);
+	glVertex3f(x-13,y+28,z+5);
+	glVertex3f(x-1,y+18,z+5);
+	glEnd();
+	
+	glColor3f(0.3,0.3,0.3);
+	glBegin(GL_POLYGON);   //jalan
+	glVertex3f(x-45,y-5,z+5);
+	glVertex3f(x-10,y+18,z+5);
+	glVertex3f(x-30,y-5,z+5);
+	glEnd();
+	
+	glColor3f(0.015,0.3,0.13);
+	glBegin(GL_LINE_STRIP);   //rumput	
+	glVertex3f(x-48,y+15,z+5);
+	glVertex3f(x-45,y+10,z+5);
+	glVertex3f(x-42,y+15,z+5);
+	glVertex3f(x-39,y+10,z+5);
+	glVertex3f(x-36,y+15,z+5);
+	glVertex3f(x-33,y+10,z+5);
+	glVertex3f(x-30,y+15,z+5);
+	glVertex3f(x-27,y+10,z+5);
+	glVertex3f(x-24,y+15,z+5);
+	glEnd();
+	
+	glColor3f(0.015,0.3,0.13);
+	glBegin(GL_LINE_STRIP);   //rumput	
+	glVertex3f(x-48,y+8,z+5);
+	glVertex3f(x-45,y+3,z+5);
+	glVertex3f(x-42,y+8,z+5);
+	glVertex3f(x-39,y+3,z+5);
+	glVertex3f(x-36,y+8,z+5);
+	glEnd();
+		
+	glColor3f(0.015,0.3,0.13);
+	glBegin(GL_LINE_STRIP);   //rumput	
+	glVertex3f(x-14,y+9,z+5);
+	glVertex3f(x-11,y+2,z+5);
+	glVertex3f(x-8,y+9,z+5);
+	glVertex3f(x-5,y+2,z+5);
+	glVertex3f(x-2,y+9,z+5);
+	glEnd();
+	
+	
+	
 
+}
 
 
 //---------------gambar frame jendela----------------//
@@ -515,14 +569,18 @@ void house1()
 	//-----------tulisan depan rumah--------------//
 	tulisan(20,60,195.2); 
 	
-	//-----------gambar kanvas ruang 1-------------//
-	gambar(-150,40,105); //kanvas 2.1
-	gambar(-50,40,105); //kanvas 2.2
-	gambar(100,40,105); //kanvas 2.3
-	gambar(200,40,105); //kanvas 2.4 
+	//-----------gambar pohon ruang 1-------------//
+	gambar(-150,40,105.1); //kanvas 2.1
+	gambar(-50,40,105.1); //kanvas 2.2
+	gambar(100,40,105.1); //kanvas 2.3
+	gambar(200,40,105.1); //kanvas 2.4 
 	
-	
-
+	//-----------gambar gunung ruang tengah -------//
+	gambar2(-150,40,-94.9); //kanvas 3.1
+	gambar2(-50,40,-94.9); //kanvas 3.2
+	gambar2(100,40,-94.9); //kanvas 3.3
+	gambar2(200,40,-94.9); //kanvas 3.4	
+		
 	kanvas(-150,30,195.1); //kanvas 1.1
 	kanvas(-50,30,195.1); //kanvas 1.2
 	kanvas(100,30,195.1); //kanvas 1.3
