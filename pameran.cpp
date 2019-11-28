@@ -366,18 +366,50 @@ void tulisan(float x,float y,float z)
 //---------------gambar------------------//
 void gambar(float x,float y,float z)
 {
-
-
-
 	glColor3f(0.8,0.4,0.2);
-	glBegin(GL_POLYGON);   //A
-	glVertex3f(x-33,y+12,z+5);
-	glVertex3f(x-37,y+5,z+5);
-	glVertex3f(x-38,y+5,z+5);
-	glVertex3f(x-35,y+20,z+5);
-	glVertex3f(x-31,y+20,z+5);
-	glVertex3f(x-28,y+5,z+5);
-	glVertex3f(x-29,y+5,z+5);
+	glBegin(GL_POLYGON);   //batang
+	glVertex3f(x-30,y+1,z+5);
+	glVertex3f(x-36,y+1,z+5);
+	glVertex3f(x-36,y+10,z+5);
+	glVertex3f(x-30,y+10,z+5);
+	glEnd();
+	
+	glColor3f(0.015,0.3,0.13);
+	glBegin(GL_POLYGON);   //daun
+	glVertex3f(x-31,y+25,z+5);
+	glVertex3f(x-26,y+18,z+5);
+	glVertex3f(x-29,y+18,z+5);
+	glVertex3f(x-23,y+10,z+5);
+	glVertex3f(x-43,y+10,z+5);
+	glVertex3f(x-38,y+18,z+5);
+	glVertex3f(x-40,y+18,z+5);
+	glVertex3f(x-35,y+25,z+5);
+	glVertex3f(x-38,y+25,z+5);
+	glVertex3f(x-33,y+30,z+5);
+	glVertex3f(x-28,y+25,z+5);
+	glEnd();
+	
+	glColor3f(0.8,0.4,0.2);
+	glBegin(GL_POLYGON);   //batang
+	glVertex3f(x-20,y+1,z+5);
+	glVertex3f(x-26,y+1,z+5);
+	glVertex3f(x-26,y+10,z+5);
+	glVertex3f(x-20,y+10,z+5);
+	glEnd();
+	
+	glColor3f(0.015,0.3,0.13);
+	glBegin(GL_POLYGON);   //daun
+	glVertex3f(x-21,y+25,z+5);
+	glVertex3f(x-16,y+18,z+5);
+	glVertex3f(x-19,y+18,z+5);
+	glVertex3f(x-13,y+10,z+5);
+	glVertex3f(x-33,y+10,z+5);
+	glVertex3f(x-28,y+18,z+5);
+	glVertex3f(x-30,y+18,z+5);
+	glVertex3f(x-25,y+25,z+5);
+	glVertex3f(x-28,y+25,z+5);
+	glVertex3f(x-23,y+30,z+5);
+	glVertex3f(x-18,y+25,z+5);
 	glEnd();
 }
 
