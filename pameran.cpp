@@ -777,6 +777,7 @@ void display(void)
 	glColor3f(0.3,0.3,0.3);//warna depan kanan
 	glVertex3f(25,0.01,250);
 	
+	//--------BATAS TROTOAR DEPAN KIRI---------//
 	glColor3f(0.2,0.2,0.2);
 	glVertex3f(-300.0, 2.0, 300.0); //jalan belakang kiri
 	glColor3f(0.2,0.2,0.2);
@@ -785,6 +786,24 @@ void display(void)
 	glVertex3f(-30.0, 0.0, 300.0);//jalan depan kanan
 	glColor3f(0.2,0.2,0.2);
 	glVertex3f(-300.0, 0.0, 300.0); //jalan depan kiri
+	
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-300.0, 2.0, 297.0); //jalan belakang kiri
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 2.0, 297.0);//jalan belakang kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 0.0, 297.0);//jalan depan kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-300.0, 0.0, 297.0); //jalan depan kiri
+	
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-300.0, 2.0, 297.0); //jalan belakang kiri
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 2.0, 297.0);//jalan belakang kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 2.0, 300.0);//jalan depan kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-300.0, 2.0, 300.0); //jalan depan kiri
 	
 	glEnd();
 	glFlush();
