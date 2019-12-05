@@ -375,7 +375,7 @@ void gambar(float x,float y,float z)
 	glVertex3f(x-36,y+10,z+5);
 	glVertex3f(x-30,y+10,z+5);
 	glEnd();
-	
+
 	glColor3f(0.015,0.5,0.13);
 	glBegin(GL_POLYGON);   //daun
 	glVertex3f(x-31,y+25,z+5);
@@ -390,7 +390,7 @@ void gambar(float x,float y,float z)
 	glVertex3f(x-33,y+30,z+5);
 	glVertex3f(x-28,y+25,z+5);
 	glEnd();
-	
+
 	glColor3f(0.8,0.4,0.2);
 	glBegin(GL_POLYGON);   //batang
 	glVertex3f(x-20,y+1,z+5);
@@ -398,7 +398,7 @@ void gambar(float x,float y,float z)
 	glVertex3f(x-26,y+10,z+5);
 	glVertex3f(x-20,y+10,z+5);
 	glEnd();
-	
+
 	glColor3f(0.015,0.5,0.13);
 	glBegin(GL_POLYGON);   //daun
 	glVertex3f(x-21,y+25,z+5);
@@ -426,16 +426,16 @@ void gambar2(float x,float y,float z)
 	glVertex3f(x-13,y+28,z+5);
 	glVertex3f(x-1,y+18,z+5);
 	glEnd();
-	
+
 	glColor3f(0.5,0.5,0.5);
 	glBegin(GL_POLYGON);   //jalan
 	glVertex3f(x-45,y-5,z+5);
 	glVertex3f(x-10,y+18,z+5);
 	glVertex3f(x-30,y-5,z+5);
 	glEnd();
-	
+
 	glColor3f(0.015,0.5,0.13);
-	glBegin(GL_LINE_STRIP);   //rumput	
+	glBegin(GL_LINE_STRIP);   //rumput
 	glVertex3f(x-48,y+15,z+5);
 	glVertex3f(x-45,y+10,z+5);
 	glVertex3f(x-42,y+15,z+5);
@@ -446,27 +446,27 @@ void gambar2(float x,float y,float z)
 	glVertex3f(x-27,y+10,z+5);
 	glVertex3f(x-24,y+15,z+5);
 	glEnd();
-	
+
 	glColor3f(0.015,0.5,0.13);
-	glBegin(GL_LINE_STRIP);   //rumput	
+	glBegin(GL_LINE_STRIP);   //rumput
 	glVertex3f(x-48,y+8,z+5);
 	glVertex3f(x-45,y+3,z+5);
 	glVertex3f(x-42,y+8,z+5);
 	glVertex3f(x-39,y+3,z+5);
 	glVertex3f(x-36,y+8,z+5);
 	glEnd();
-		
+
 	glColor3f(0.015,0.5,0.13);
-	glBegin(GL_LINE_STRIP);   //rumput	
+	glBegin(GL_LINE_STRIP);   //rumput
 	glVertex3f(x-14,y+9,z+5);
 	glVertex3f(x-11,y+2,z+5);
 	glVertex3f(x-8,y+9,z+5);
 	glVertex3f(x-5,y+2,z+5);
 	glVertex3f(x-2,y+9,z+5);
 	glEnd();
-	
-	
-	
+
+
+
 
 }
 
@@ -568,24 +568,25 @@ void house1()
 	jendela(200,30,-205.2); //jendela 2.-4
 
 	//-----------tulisan depan rumah--------------//
-	tulisan(20,60,195.2); 
-	
+	tulisan(20,60,195.2);
+
 	//-----------gambar pohon ruang 1-------------//
 	gambar(-150,40,105.1); //kanvas 2.1
 	gambar(-50,40,105.1); //kanvas 2.2
 	gambar(100,40,105.1); //kanvas 2.3
-	gambar(200,40,105.1); //kanvas 2.4 
-	
+	gambar(200,40,105.1); //kanvas 2.4
+
 	//-----------gambar gunung ruang tengah -------//
 	gambar2(-150,40,-94.9); //kanvas 3.1
 	gambar2(-50,40,-94.9); //kanvas 3.2
 	gambar2(100,40,-94.9); //kanvas 3.3
-	gambar2(200,40,-94.9); //kanvas 3.4	
-		
+	gambar2(200,40,-94.9); //kanvas 3.4
+
 	kanvas(-150,30,195.1); //kanvas 1.1
 	kanvas(-50,30,195.1); //kanvas 1.2
 	kanvas(100,30,195.1); //kanvas 1.3
 	kanvas(200,30,195.1); //kanvas 1.4
+
 
 
 	kanvas(-150,30,189); //kanvas 1.-1
@@ -593,6 +594,10 @@ void house1()
 	kanvas(100,30,189); //kanvas 1.-3
 	kanvas(200,30,189); //kanvas 1.-4
 
+    gambar(-150,40,189.9); //kanvas 2.1
+	gambar(-50,40,189.9); //kanvas 2.2
+	gambar(100,40,189.9); //kanvas 2.3
+	gambar(200,40,189.9); //kanvas 2.4
 
 
 	//------------------------------------------//
@@ -607,6 +612,7 @@ void house1()
 	kanvas(100,30,94); //kanvas 2.-3
 	kanvas(200,30,94); //kanvas 2.-4
 
+
 	//---------------------------------------//
 
 	kanvas(-150,30,-95); //kanvas 3.1
@@ -614,12 +620,21 @@ void house1()
 	kanvas(100,30,-95); //kanvas 3.3
 	kanvas(200,30,-95); //kanvas 3.4
 
+	gambar(-150,40,-106.2); //kanvas 2.1
+	gambar(-50,40,-106.2); //kanvas 2.2
+	gambar(100,40,-106.2); //kanvas 2.3
+	gambar(200,40,-106.2); //kanvas 2.4
+
 	kanvas(-150,30,-106); //kanvas 3.-1
 	kanvas(-50,30,-106); //kanvas 3.-2
 	kanvas(100,30,-106); //kanvas 3.-3
 	kanvas(200,30,-106); //kanvas 3.-4
 
 	//------------------------------------//
+    gambar(-150,40,-190.1); //kanvas 2.1
+	gambar(-50,40,-190.1); //kanvas 2.2
+	gambar(100,40,-190.1); //kanvas 2.3
+	gambar(200,40,-190.1); //kanvas 2.4
 
 	kanvas(-150,30,-191); //kanvas 2.1
 	kanvas(-50,30,-191); //kanvas 2.2
@@ -682,17 +697,17 @@ void display(void)
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 //------------------gambar tanah------------------//
 	glBegin(GL_QUADS);
-	
+
 	//-------------- LANTAI GEDUNG --------------------//
 	glColor3f(0.8,0.6,0.4);//warna tanah bagian belakang kiri
-    glVertex3f(-300.0, 0.0, -250.0); 
+    glVertex3f(-300.0, 0.0, -250.0);
 	glColor3f(0.8,0.6,0.4);//warna tanah bagian depan kiri
 	glVertex3f(-300.0, 0.0, 250.0);
 	glColor3f(0.8,0.6,0.4);
 	glVertex3f(300.0, 0.0, 250.0);//warna tanah bagian depan kanan
 	glColor3f(0.8,0.6,0.4);
 	glVertex3f(300.0, 0.0, -250.0);//warna tanah bagian belakang kanan
-	
+
 	//---------------- JALANAN LUAR --------------------//
 	glColor3f(0.1,0.1,0.1);
 	glVertex3f(-300.0, 0.0, 300.0); //jalan belakang kiri
@@ -702,7 +717,7 @@ void display(void)
 	glVertex3f(300.0, 0.0, 400.0);//jalan depan kanan
 	glColor3f(0.1,0.1,0.1);
 	glVertex3f(-300.0, 0.0, 400.0); //jalan depan kiri
-	
+
 	//---------------- GARIS PUTIH PUTUS PUTUS TENGAH JALAN--------------//
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(-250.0, 0.01, 347.0); //jalan belakang kiri
@@ -712,7 +727,7 @@ void display(void)
 	glVertex3f(-200.0, 0.01, 353.0);//jalan depan kanan
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(-250.0, 0.01, 353.0); //jalan depan kiri
-	
+
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(-150.0, 0.01, 347.0); //jalan belakang kiri
 	glColor3f(0.5,0.5,0.5);
@@ -721,7 +736,7 @@ void display(void)
 	glVertex3f(-100.0, 0.01, 353.0);//jalan depan kanan
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(-150.0, 0.01, 353.0); //jalan depan kiri
-	
+
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(-50.0, 0.01, 347.0); //jalan belakang kiri
 	glColor3f(0.5,0.5,0.5);
@@ -730,7 +745,7 @@ void display(void)
 	glVertex3f(0.0, 0.01, 353.0);//jalan depan kanan
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(-50.0, 0.01, 353.0); //jalan depan kiri
-	
+
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(50.0, 0.01, 347.0); //jalan belakang kiri
 	glColor3f(0.5,0.5,0.5);
@@ -739,7 +754,7 @@ void display(void)
 	glVertex3f(100.0, 0.01, 353.0);//jalan depan kanan
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(50.0, 0.01, 353.0); //jalan depan kiri
-	
+
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(150.0, 0.01, 347.0); //jalan belakang kiri
 	glColor3f(0.5,0.5,0.5);
@@ -748,7 +763,7 @@ void display(void)
 	glVertex3f(200.0, 0.01, 353.0);//jalan depan kanan
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(150.0, 0.01, 353.0); //jalan depan kiri
-	
+
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(250.0, 0.01, 347.0); //jalan belakang kiri
 	glColor3f(0.5,0.5,0.5);
@@ -757,7 +772,7 @@ void display(void)
 	glVertex3f(300.0, 0.01, 353.0);//jalan depan kanan
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(250.0, 0.01, 353.0); //jalan depan kiri
-	
+
 	//-----------TROTOAR----------------//
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(-300.0, 0.0, 250.0); //jalan belakang kiri
@@ -767,7 +782,7 @@ void display(void)
 	glVertex3f(300.0, 0.0, 300.0);//jalan depan kanan
 	glColor3f(0.5,0.5,0.5);
 	glVertex3f(-300.0, 0.0, 300.0); //jalan depan kiri
-	
+
     glColor3f(0.3,0.3,0.3);//warna belakang kanan
     glVertex3f(-30,0.01,250);
 	glColor3f(0.3,0.3,0.3);//warna belakang kiri
@@ -776,7 +791,7 @@ void display(void)
 	glVertex3f(25,0.01,300);
 	glColor3f(0.3,0.3,0.3);//warna depan kanan
 	glVertex3f(25,0.01,250);
-	
+
 	//--------BATAS TROTOAR DEPAN KIRI---------//
 	glColor3f(0.2,0.2,0.2);
 	glVertex3f(-300.0, 2.0, 300.0); //jalan belakang kiri
@@ -786,7 +801,7 @@ void display(void)
 	glVertex3f(-30.0, 0.0, 300.0);//jalan depan kanan
 	glColor3f(0.2,0.2,0.2);
 	glVertex3f(-300.0, 0.0, 300.0); //jalan depan kiri
-	
+
 	glColor3f(0.2,0.2,0.2);
 	glVertex3f(-300.0, 2.0, 297.0); //jalan belakang kiri
 	glColor3f(0.2,0.2,0.2);
@@ -795,7 +810,7 @@ void display(void)
 	glVertex3f(-30.0, 0.0, 297.0);//jalan depan kanan
 	glColor3f(0.2,0.2,0.2);
 	glVertex3f(-300.0, 0.0, 297.0); //jalan depan kiri
-	
+
 	glColor3f(0.2,0.2,0.2);
 	glVertex3f(-300.0, 2.0, 297.0); //jalan belakang kiri
 	glColor3f(0.2,0.2,0.2);
@@ -804,7 +819,7 @@ void display(void)
 	glVertex3f(-30.0, 2.0, 300.0);//jalan depan kanan
 	glColor3f(0.2,0.2,0.2);
 	glVertex3f(-300.0, 2.0, 300.0); //jalan depan kiri
-	
+
 	glEnd();
 	glFlush();
 
