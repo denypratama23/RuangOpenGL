@@ -23,6 +23,7 @@ void jendela(float,float,float);
 void tulisan(float,float,float);
 void gambar(float,float,float);
 void gambar2(float,float,float);
+void gambar3(float,float,float);//kaos
 void atap(float,float,float);
 void circle1(float);
 void stand(float ,float ,float );
@@ -469,7 +470,71 @@ void gambar2(float x,float y,float z)
 
 
 }
+//---------------gambar3 (Kaos)------------------//
+void gambar3(float x,float y,float z)
+{
+	glColor3f(0.2,0.5,0.2);
+	glBegin(GL_POLYGON);   //kaos ijo
+	glVertex3f(x-10,y+35,z+5);
+	glVertex3f(x-4,y+30,z+5);
+	glVertex3f(x-4,y+25,z+5);
+	glVertex3f(x-7,y+27,z+5);
+	glVertex3f(x-7,y+13,z+5);
+	glVertex3f(x-21,y+13,z+5);
+	glVertex3f(x-21,y+31,z+5);
+	glVertex3f(x-24,y+25,z+5);
+	glVertex3f(x-24,y+30,z+5);
+	glVertex3f(x-18,y+35,z+5);	
+	glEnd();
+	
+	glColor3f(0.9,0.8,0.1);
+	glBegin(GL_POLYGON);   //kaos kuning
+	glVertex3f(x-20,y+25,z+5);
+	glVertex3f(x-14,y+20,z+5);
+	glVertex3f(x-14,y+15,z+5);
+	glVertex3f(x-17,y+17,z+5);
+	glVertex3f(x-17,y+3,z+5);
+	glVertex3f(x-31,y+3,z+5);
+	glVertex3f(x-31,y+21,z+5);
+	glVertex3f(x-34,y+15,z+5);
+	glVertex3f(x-34,y+20,z+5);
+	glVertex3f(x-28,y+25,z+5);	
+	glEnd();
+	
+	glColor3f(0.9,0.1,0.1);
+	glBegin(GL_POLYGON);   //kaos merah
+	glVertex3f(x-30,y+15,z+5);
+	glVertex3f(x-24,y+10,z+5);
+	glVertex3f(x-24,y+5,z+5);
+	glVertex3f(x-27,y+7,z+5);
+	glVertex3f(x-27,y-6,z+5);
+	glVertex3f(x-41,y-6,z+5);
+	glVertex3f(x-41,y+11,z+5);
+	glVertex3f(x-44,y+5,z+5);
+	glVertex3f(x-44,y+10,z+5);
+	glVertex3f(x-38,y+15,z+5);	
+	glEnd();
+	
+	glColor3f(0.5,0.015,0.13);
+	glBegin(GL_POLYGON);   //frame
+	glVertex3f(x-50,y+20,z+5);
+	glVertex3f(x-30,y+40,z+5);
+	glVertex3f(x-50,y+40,z+5);
+	glEnd();
+	
+	glColor3f(0.5,0.015,0.13);
+	glBegin(GL_POLYGON);   //frame
+	
+	glVertex3f(x,y+10,z+5);
+	glVertex3f(x-20,y-10,z+5);
+	glVertex3f(x,y-10,z+5);
+	glEnd();
+	
 
+
+	
+
+}
 
 //---------------gambar frame jendela----------------//
 
@@ -593,7 +658,11 @@ void house1()
 	kanvas(-50,30,189); //kanvas 1.-2
 	kanvas(100,30,189); //kanvas 1.-3
 	kanvas(200,30,189); //kanvas 1.-4
-
+	
+	gambar2(-150,40,188.9); //kanvas 1.-1
+	gambar3(-50,40,188.9); //kanvas 1.-2
+	gambar2(100,40,188.9); //kanvas 1.-3
+	gambar3(200,40,188.9); //kanvas 1.-4
     
 	//------------------------------------------//
 
@@ -626,10 +695,10 @@ void house1()
 	kanvas(200,30,-106); //kanvas 3.-4
 
 	//------------------------------------//
-    gambar(-150,40,-190.1); //kanvas 2.1
-	gambar(-50,40,-190.1); //kanvas 2.2
-	gambar(100,40,-190.1); //kanvas 2.3
-	gambar(200,40,-190.1); //kanvas 2.4
+    gambar3(-150,40,-190.1); //kanvas 2.1
+	gambar3(-50,40,-190.1); //kanvas 2.2
+	gambar3(100,40,-190.1); //kanvas 2.3
+	gambar3(200,40,-190.1); //kanvas 2.4
 
 	kanvas(-150,30,-191); //kanvas 2.1
 	kanvas(-50,30,-191); //kanvas 2.2
