@@ -748,8 +748,8 @@ glEnd();
 
 void init(void)
 {
-		glClearColor(0.0,0.0,0.0,0.0);//warna langit
-glEnable(GL_DEPTH_TEST);
+	glClearColor(0.0,0.0,0.0,0.0);//warna langit
+	glEnable(GL_DEPTH_TEST);
 	glMatrixMode(GL_MODELVIEW);
 }
 
@@ -859,7 +859,7 @@ void display(void)
 	//--------BATAS TROTOAR DEPAN KIRI---------//
 	glColor3f(0.2,0.2,0.2);
 	glVertex3f(-300.0, 2.0, 300.0); //jalan belakang kiri
-	glColor3f(0.2,0.2,0.2);
+	glColor3f(0.4,0.4,0.4);
 	glVertex3f(-30.0, 2.0, 300.0);//jalan belakang kanan
 	glColor3f(0.2,0.2,0.2);
 	glVertex3f(-30.0, 0.0, 300.0);//jalan depan kanan
@@ -881,9 +881,129 @@ void display(void)
 	glVertex3f(-30.0, 2.0, 297.0);//jalan belakang kanan
 	glColor3f(0.2,0.2,0.2);
 	glVertex3f(-30.0, 2.0, 300.0);//jalan depan kanan
-	glColor3f(0.2,0.2,0.2);
+	glColor3f(0.4,0.4,0.4);
 	glVertex3f(-300.0, 2.0, 300.0); //jalan depan kiri
+	
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 2.0, 297.0); //
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 0.0, 297.0);//
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 0.0, 300.0);//
+	glColor3f(0.4,0.4,0.4);
+	glVertex3f(-30.0, 2.0, 300.0); //
 
+//--------BATAS TROTOAR DEPAN KANAN---------//
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(300.0, 2.0, 300.0); //jalan belakang kiri
+	glColor3f(0.4,0.4,0.4);
+	glVertex3f(25.0, 2.0, 300.0);//jalan belakang kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 0.0, 300.0);//jalan depan kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(300.0, 0.0, 300.0); //jalan depan kiri
+
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(300.0, 2.0, 297.0); //jalan belakang kiri
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 2.0, 297.0);//jalan belakang kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 0.0, 297.0);//jalan depan kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(300.0, 0.0, 297.0); //jalan depan kiri
+
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(300.0, 2.0, 297.0); //jalan belakang kiri
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 2.0, 297.0);//jalan belakang kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 2.0, 300.0);//jalan depan kanan
+	glColor3f(0.4,0.4,0.4);
+	glVertex3f(300.0, 2.0, 300.0); //jalan depan kiri
+	
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 2.0, 297.0); //
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 0.0, 297.0);//
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 0.0, 300.0);//
+	glColor3f(0.4,0.4,0.4);
+	glVertex3f(25.0, 2.0, 300.0); //
+	
+		//--------BATAS TROTOAR BELAKANG KIRI---------//
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-300.0, 2.0, 253.0); //jalan belakang kiri
+	glColor3f(0.4,0.4,0.4);
+	glVertex3f(-30.0, 2.0, 253.0);//jalan belakang kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 0.0, 253.0);//jalan depan kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-300.0, 0.0, 253.0); //jalan depan kiri
+
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-300.0, 2.0, 250.0); //jalan belakang kiri
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 2.0, 250.0);//jalan belakang kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 0.0, 250.0);//jalan depan kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-300.0, 0.0, 250.0); //jalan depan kiri
+
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-300.0, 2.0, 250.0); //jalan belakang kiri
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 2.0, 250.0);//jalan belakang kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 2.0, 253.0);//jalan depan kanan
+	glColor3f(0.4,0.4,0.4);
+	glVertex3f(-300.0, 2.0, 253.0); //jalan depan kiri
+	
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 2.0, 250.0); //
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 0.0, 250.0);//
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(-30.0, 0.0, 253.0);//
+	glColor3f(0.4,0.4,0.4);
+	glVertex3f(-30.0, 2.0, 253.0); //
+
+//--------BATAS TROTOAR BELAKANG KANAN---------//
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(300.0, 2.0, 253.0); //jalan belakang kiri
+	glColor3f(0.4,0.4,0.4);
+	glVertex3f(25.0, 2.0, 253.0);//jalan belakang kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 0.0, 253.0);//jalan depan kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(300.0, 0.0, 253.0); //jalan depan kiri
+
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(300.0, 2.0, 250.0); //jalan belakang kiri
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 2.0, 250.0);//jalan belakang kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 0.0, 250.0);//jalan depan kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(300.0, 0.0, 250.0); //jalan depan kiri
+
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(300.0, 2.0, 250.0); //jalan belakang kiri
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 2.0, 250.0);//jalan belakang kanan
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 2.0, 253.0);//jalan depan kanan
+	glColor3f(0.4,0.4,0.4);
+	glVertex3f(300.0, 2.0, 253.0); //jalan depan kiri
+	
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 2.0, 250.0); //
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 0.0, 250.0);//
+	glColor3f(0.2,0.2,0.2);
+	glVertex3f(25.0, 0.0, 253.0);//
+	glColor3f(0.4,0.4,0.4);
+	glVertex3f(25.0, 2.0, 253.0); //
+	
 	glEnd();
 	glFlush();
 
