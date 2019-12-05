@@ -594,12 +594,7 @@ void house1()
 	kanvas(100,30,189); //kanvas 1.-3
 	kanvas(200,30,189); //kanvas 1.-4
 
-    gambar(-150,40,189.9); //kanvas 2.1
-	gambar(-50,40,189.9); //kanvas 2.2
-	gambar(100,40,189.9); //kanvas 2.3
-	gambar(200,40,189.9); //kanvas 2.4
-
-
+    
 	//------------------------------------------//
 
 	kanvas(-150,30,105); //kanvas 2.1
