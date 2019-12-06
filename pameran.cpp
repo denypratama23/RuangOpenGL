@@ -21,6 +21,7 @@ void ataspintu(float,float,float);
 void kanvas(float,float,float);
 void jendela(float,float,float);
 void tulisan(float,float,float);
+void gambarabstrak(float,float,float);
 void gambar(float,float,float);
 void gambar2(float,float,float);
 void gambar3(float,float,float);//kaos
@@ -366,6 +367,47 @@ void tulisan(float x,float y,float z)
 
 }
 
+//---------------gambar abstak------------------//
+void gambarabstrak1(float x,float y,float z)
+{
+	glBegin(GL_POLYGON);   //abstrak
+	glColor3f(1.8,0.0,0.2);		glVertex3f(x-5,y-5,z+5);
+	glColor3f(0.0,0.4,0.2);		glVertex3f(x-45,y-5,z+5);
+	glColor3f(0.8,1.4,0.2);		glVertex3f(x-45,y+35,z+5);
+	glColor3f(0.0,0.4,1.2);		glVertex3f(x-5,y+35,z+5);
+	glEnd();
+
+}
+void gambarabstrak2(float x,float y,float z)
+{
+	glBegin(GL_POLYGON);   //abstrak
+	glColor3f(0.8,1.0,0.2);		glVertex3f(x-5,y-5,z+5);
+	glColor3f(1.0,0.4,0.2);		glVertex3f(x-45,y-5,z+5);
+	glColor3f(0.8,0.4,1.2);		glVertex3f(x-45,y+35,z+5);
+	glColor3f(0.0,1.4,1.2);		glVertex3f(x-5,y+35,z+5);
+	glEnd();
+
+}
+void gambarabstrak3(float x,float y,float z)
+{
+	glBegin(GL_POLYGON);   //abstrak
+	glColor3f(1.0,0.0,0.2);		glVertex3f(x-5,y-5,z+5);
+	glColor3f(0.0,1.0,0.2);		glVertex3f(x-45,y-5,z+5);
+	glColor3f(0.1,1.0,0.2);		glVertex3f(x-45,y+35,z+5);
+	glColor3f(1.0,0.4,0.8);		glVertex3f(x-5,y+35,z+5);
+	glEnd();
+
+}
+void gambarabstrak4(float x,float y,float z)
+{
+	glBegin(GL_POLYGON);   //abstrak
+	glColor3f(1.0,0.5,0.2);		glVertex3f(x-5,y-5,z+5);
+	glColor3f(0.0,0.4,0.2);		glVertex3f(x-45,y-5,z+5);
+	glColor3f(1.0,0.4,0.2);		glVertex3f(x-45,y+35,z+5);
+	glColor3f(0.8,0.4,1.2);		glVertex3f(x-5,y+35,z+5);
+	glEnd();
+
+}
 //---------------gambar------------------//
 void gambar(float x,float y,float z)
 {
@@ -524,7 +566,6 @@ void gambar3(float x,float y,float z)
 	
 	glColor3f(0.5,0.015,0.13);
 	glBegin(GL_POLYGON);   //frame
-	
 	glVertex3f(x,y+10,z+5);
 	glVertex3f(x-20,y-10,z+5);
 	glVertex3f(x,y-10,z+5);
@@ -625,12 +666,22 @@ void house1()
 	jendela(-50,30,195.2); //jendela 1.2
 	jendela(100,30,195.2); //jendela 1.3
 	jendela(200,30,195.2); //jendela 1.4
+	
+	kanvas(-150,30,195.1); //kanvas 1.1
+	kanvas(-50,30,195.1); //kanvas 1.2
+	kanvas(100,30,195.1); //kanvas 1.3
+	kanvas(200,30,195.1); //kanvas 1.4
 
 	//-----------jendela belakang rumah--------------//
 	jendela(-150,30,-205.2); //jendela 2.-1
 	jendela(-50,30,-205.2); //jendela 2.-2
 	jendela(100,30,-205.2); //jendela 2.-3
 	jendela(200,30,-205.2); //jendela 2.-4
+	
+	kanvas(-150,30,-205.1); //kanvas 2.-1
+	kanvas(-50,30,-205.1); //kanvas 2.-2
+	kanvas(100,30,-205.1); //kanvas 2.-3
+	kanvas(200,30,-205.1); //kanvas 2.-4
 
 	//-----------tulisan depan rumah--------------//
 	tulisan(20,60,195.2);
@@ -640,6 +691,22 @@ void house1()
 	gambar(-50,40,105.1); //kanvas 2.2
 	gambar(100,40,105.1); //kanvas 2.3
 	gambar(200,40,105.1); //kanvas 2.4
+	
+	kanvas(-150,30,105); //kanvas 2.1
+	kanvas(-50,30,105); //kanvas 2.2
+	kanvas(100,30,105); //kanvas 2.3
+	kanvas(200,30,105); //kanvas 2.4
+	
+	gambar(-150,40,-106.2); //kanvas 2.1
+	gambar(-50,40,-106.2); //kanvas 2.2
+	gambar(100,40,-106.2); //kanvas 2.3
+	gambar(200,40,-106.2); //kanvas 2.4
+	
+	kanvas(-150,30,-106); //kanvas 3.-1
+	kanvas(-50,30,-106); //kanvas 3.-2
+	kanvas(100,30,-106); //kanvas 3.-3
+	kanvas(200,30,-106); //kanvas 3.-4
+	
 
 	//-----------gambar gunung ruang tengah -------//
 	gambar2(-150,40,-94.9); //kanvas 3.1
@@ -647,52 +714,44 @@ void house1()
 	gambar2(100,40,-94.9); //kanvas 3.3
 	gambar2(200,40,-94.9); //kanvas 3.4
 
-	kanvas(-150,30,195.1); //kanvas 1.1
-	kanvas(-50,30,195.1); //kanvas 1.2
-	kanvas(100,30,195.1); //kanvas 1.3
-	kanvas(200,30,195.1); //kanvas 1.4
-
-
-
-	kanvas(-150,30,189); //kanvas 1.-1
-	kanvas(-50,30,189); //kanvas 1.-2
-	kanvas(100,30,189); //kanvas 1.-3
-	kanvas(200,30,189); //kanvas 1.-4
+	kanvas(-150,30,-95); //kanvas 3.1
+	kanvas(-50,30,-95); //kanvas 3.2
+	kanvas(100,30,-95); //kanvas 3.3
+	kanvas(200,30,-95); //kanvas 3.4
 	
-	gambar2(-150,40,188.7); //kanvas 1.-1
-	gambar3(-50,40,188.7); //kanvas 1.-2
-	gambar2(100,40,188.7); //kanvas 1.-3
-	gambar3(200,40,188.7); //kanvas 1.-4
-    
-	//------------------------------------------//
-
-	kanvas(-150,30,105); //kanvas 2.1
-	kanvas(-50,30,105); //kanvas 2.2
-	kanvas(100,30,105); //kanvas 2.3
-	kanvas(200,30,105); //kanvas 2.4
-
 	kanvas(-150,30,94); //kanvas 2.-1
 	kanvas(-50,30,94); //kanvas 2.-2
 	kanvas(100,30,94); //kanvas 2.-3
 	kanvas(200,30,94); //kanvas 2.-4
 
+	gambarabstrak1(-150,40,93.9); //kanvas 2.-1
+	gambarabstrak2(-50,40,93.9); //kanvas 2.-2
+	gambarabstrak3(100,40,93.9); //kanvas 2.-3
+	gambarabstrak4(200,40,93.9); //kanvas 2.-4
+		
+//	------------------------------------//
+
+
+	gambar2(-150,40,188.7); //kanvas 1.-1
+	gambar3(-50,40,188.7); //kanvas 1.-2
+	gambar2(100,40,188.7); //kanvas 1.-3
+	gambar3(200,40,188.7); //kanvas 1.-4
+	
+	kanvas(-150,30,189); //kanvas 1.-1
+	kanvas(-50,30,189); //kanvas 1.-2
+	kanvas(100,30,189); //kanvas 1.-3
+	kanvas(200,30,189); //kanvas 1.-4	
+
+    
+	//------------------------------------------//
+
 
 	//---------------------------------------//
+	
 
-	kanvas(-150,30,-95); //kanvas 3.1
-	kanvas(-50,30,-95); //kanvas 3.2
-	kanvas(100,30,-95); //kanvas 3.3
-	kanvas(200,30,-95); //kanvas 3.4
 
-	gambar(-150,40,-106.2); //kanvas 2.1
-	gambar(-50,40,-106.2); //kanvas 2.2
-	gambar(100,40,-106.2); //kanvas 2.3
-	gambar(200,40,-106.2); //kanvas 2.4
-
-	kanvas(-150,30,-106); //kanvas 3.-1
-	kanvas(-50,30,-106); //kanvas 3.-2
-	kanvas(100,30,-106); //kanvas 3.-3
-	kanvas(200,30,-106); //kanvas 3.-4
+	
+	
 
 	//------------------------------------//
     gambar3(-150,40,-190.1); //kanvas 2.1
@@ -704,11 +763,6 @@ void house1()
 	kanvas(-50,30,-191); //kanvas 2.2
 	kanvas(100,30,-191); //kanvas 2.3
 	kanvas(200,30,-191); //kanvas 2.4
-
-	kanvas(-150,30,-205.1); //kanvas 2.-1
-	kanvas(-50,30,-205.1); //kanvas 2.-2
-	kanvas(100,30,-205.1); //kanvas 2.-3
-	kanvas(200,30,-205.1); //kanvas 2.-4
 
 	//----------- LUAR GEDUNG -------------//
 //	luargedung();
